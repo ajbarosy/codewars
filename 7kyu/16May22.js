@@ -8,18 +8,29 @@
 
 function getSum( a, b){
   
-    //   let sum = a + b
-      
-    //   if (a == b){
-    //     return a 
-    //   }
-      
-    //     return sum 
+      let sum = 0
     
-    // }
-    
-    let list = [];
-    for (let i = a; i <= b; i++) {
-      console.log(  list.push(i) )
+      
+      if (a == b){
+        return a 
+      }
+      
+      let min = a > b ? b : a;
+      let max = a > b ? a : b;
+
+      for(let i = min; i <= max; i++){
+          sum += i
+      }
+
+        return sum 
     }
+
+
+    function GetSum( a,b ) {
+        var result = 0;
+        var bigger = a > b ? a : b;
+        var smaller = a > b ? b : a;
+        for (var i = smaller; i <= bigger; i++) { result += i }
+        return result
+     }
     // He wants you to take -359 + 130 + -229 + -228 + -227... that would equal the -56105 Hope this helps :)
