@@ -12,4 +12,4 @@ const areaOrPerimeter = function(l , w) {
   };
 
 //solve areaOrPerimeter in one line of code
-const areaOrPerimeter = (l, w) => l == w ? l * w : l * 2 + w * 2;
+//const areaOrPerimeter = (l, w) => l == w ? l * w : l * 2 + w * 2;
